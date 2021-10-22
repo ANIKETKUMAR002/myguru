@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Student_management(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=50,default=None, blank=False)
     mobile = models.CharField(max_length=20, null=False)
     email = models.CharField(max_length=15, default=None, blank=False)
@@ -31,7 +30,6 @@ class Student_management(models.Model):
 
 
 class Aptitude_category_management(models.Model):
-    category = models.ForeignKey(User, on_delete=models.CASCADE)
     category_name = models.CharField(max_length=50)
 
 
