@@ -25,7 +25,9 @@ SECRET_KEY = 'ovp4&#t1yl=c43*eq(3aaj%-s-!%*d1z7(j%*jkfi&do^y)@(v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'myguru1.herokuapp.com'
+]
 
 
 # Application definition
